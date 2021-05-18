@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Михаил Барабанов](https://up.htmlacademy.ru/htmlcss/31/user/1752255).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
