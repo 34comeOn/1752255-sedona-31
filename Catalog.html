@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Каталог-Седона</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
+        </a>
+        <ul>
+          <li>
+            <a href="">Информация</a>
+          </li>
+          <li>
+            <a href="">Фото и видео</a>
+          </li>
+          <li>
+            <a href="">Карта штата</a>
+          </li>
+          <li>
+            Гостиницы
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+       <h1>Подбор жилья в Седоне</h1>
+       <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>
+            Инфраструктура:
+          </legend>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="pool" checked>
+                Бассейн
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="parking" >
+                Парковка
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="wi-fi" >
+                WI-FI
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Тип жилья:
+          </legend>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="hotel" checked>
+                Гостиница
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="motel" checked>
+                Мотель
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="apartments" checked>
+                Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Стоимость в сутки, ₽:
+          </legend>
+          <input type="text" name="min_price_per_night" placeholder="от 0">
+          <input type="text" name="max_price_per_night" placeholder="до 3000">
+          <input type="submit" value="Показать">
+        </fieldset>
+       </form> 
+       <div>
+         <svg>
+           <circle r="19" cx="50%" cy="50%" fill="#ABABAB"/>
+         </svg>
+         <svg>
+          <circle r="19" cx="80%" cy="50%" fill="#ABABAB"/>
+        </svg>
+        <svg>
+          <rect width="316" height="2" x="60" y="10" fill="lightblue"/>
+        </svg>
+        <svg>
+          <rect width="248" height="2" x="70" y="40" fill="blue"/>
+        </svg>
+       </div>     
+       <img src="img/background_for_filter.png" width="1200" height="217" alt="Фон фильтра"> 
+      </section>
+      <section>
+        <h2>
+          Сортировка результатов поиска
+        </h2>
+        <p>
+          Найдено: 3
+        </p>
+        <form action="https://echo.htmlacademy.ru" method="get">
+         <fieldset>
+          <legend>
+           Сортировка:
+          </legend>
+          <ul>
+           <li>
+             <button type="submit">
+               ПО ЦЕНЕ
+             </button>
+           </li>
+           <li>
+             <button type="submit">
+               ПО ТИПУ
+             </button>
+           </li>
+           <li>
+             <button type="submit">
+              ПО РЕЙТИНГУ
+             </button>
+           </li>
+          </ul>
+         </fieldset>
+        </form>
+        <img src="img/icon_up_dir.svg" width="11" height="10" alt="упорядочить по возрастанию">
+        <img src="img/icon_down_dir.svg" width="11" height="10" alt="упорядочить по убыванию">
+      </section> 
+      <section>
+        <h2>
+          Результаты поиска
+        </h2>
+        <div>
+          <img src="img/amara_hotel.png" width="135" height="90" alt="Превью Amara hotel">
+          <dl>
+            <dt>
+              Гостиница
+            </dt>
+            <dd>
+              От 4000 ₽
+            </dd>
+          </dl>
+          <a href="#">
+            <p>
+              Подробнее
+            </p>
+          </a>
+          <a href="#">
+            <p>
+              Забронировать
+            </p>
+          </a>
+          <p>
+            Рейтинг: 8,5
+          </p>
+          <div>
+            <img src="img/star.svg" width="18" height="17" alt="звезда">
+            <img src="img/star.svg" width="18" height="17" alt="звезда">
+            <img src="img/star.svg" width="18" height="17" alt="звезда">
+            <img src="img/star.svg" width="18" height="17" alt="звезда">
+          </div>
+        </div>
+        <div>
+          <img src="img/qualinn_motel.png" width="135" height="90" alt="Превью Qualinn motel">
+          <dl>
+            <dt>
+              Мотель
+            </dt>
+            <dd>
+              От 3000 ₽
+            </dd>
+          </dl>
+          <a href="#">
+            <p>
+              Подробнее
+            </p>
+          </a>
+          <a href="#">
+            <p>
+              Забронировать
+            </p>
+          </a>
+          <p>
+            Рейтинг: 8,9
+          </p>
+          <div>
+            <img src="img/star.svg" width="18" height="17" alt="звезда">
+            <img src="img/star.svg" width="18" height="17" alt="звезда">
+            <img src="img/star.svg" width="18" height="17" alt="звезда">
+          </div>
+        </div>
+        <div>
+          <img src="img/poco_villas.png" width="135" height="90" alt="Превью poco villas">
+          <dl>
+            <dt>
+              Апартаменты
+            </dt>
+            <dd>
+              От 2000 ₽
+            </dd>
+          </dl>
+          <a href="#">
+            <p>
+              Подробнее
+            </p>
+          </a>
+          <a href="#">
+            <p>
+              Забронировать
+            </p>
+          </a>
+          <p>
+            Рейтинг: 9,2
+          </p>
+          <div>
+            <img src="img/star.svg" width="18" height="17" alt="звезда">
+            <img src="img/star.svg" width="18" height="17" alt="звезда">
+          </div>
+        </div>
+      </section> 
+    </main>
+    <footer>
+      <section>
+        <h2>Как с нами связаться</h2>
+        <ul>
+          <li>#visitSEDONA</li>
+          <li>
+            <a href="tel:+78005558628">+7 800 555-86-28</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Седона в социальных сетях</h2>
+        <ul>
+          <li>
+            <a href="https://twitter.com/"><img src="img/twitter.svg" width="46" height="48" alt="Иконка Твиттер"></a>
+          </li>
+          <li>
+            <a href="https://ru-ru.facebook.com/"><img src="img/facebook.svg" width="46" height="48" alt="Иконка Фейсбук"></a>
+          </li>
+          <li>
+            <a href="https://youtube.com"><img src="img/youtube.svg" width="46" height="48" alt="Иконка Ютуб"></a>
+          </li>
+        </ul>
+      </section>
+      <div>
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru/"><img src="img/Academy_logo.svg" width="115" height="33" alt="Логотип академии"></a>
+      </div>
+    </footer>    
+  </body>
+</html>
