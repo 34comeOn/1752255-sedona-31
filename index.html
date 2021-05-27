@@ -5,11 +5,15 @@
     <title>
       HTML Academy: Седона
     </title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/180.svg">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <header>
       <nav>
-        <a>
+        <a href="#">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
         </a>
         <ul>
@@ -42,11 +46,9 @@
           Что посмотреть в Аризоне
         </h1>
         <div>
-          <img src="img/background.png" width="1200" height="509" alt="Потрясающий пейзаж">
-          <img src="img/welcome.svg" width="188" height="45" alt="Добро пожаловать">
-          <img src="img/gorgeous.svg" width="256" height="29" alt="великолепный">
-          <img src="img/Sedona.svg" width="457" height="213" alt="город Седона">
-          <img src="img/decoration-stripes.svg" width="1200" height="509" alt="графический элемент">         
+          <img src="img/background/index.jpg" width="1200" height="509" alt="Пейзаж долины величественного каньона">
+          <img src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать в великолепный город Седона! Гранд Каньон нам и в подметки не годится!">          
+      <!--<img src="img/decoration-stripes.svg" width="1200" height="509">Планирую сделать этот элемент при помощи SVG polygon points в html-->         
         </div>
         <div>
           <p>
@@ -61,9 +63,9 @@
         <h2>
           Чем славится Седона
         </h2>
-        <img src="img/accommodation.svg" width="75" height="72" alt="мотель">
-        <img src="img/food.svg" width="75" height="70" alt="еда">
-        <img src="img/souvenirs.svg" width="64" height="77" alt="сувениры">
+    <!--<img src="img/advantages/accommodation.svg" width="75" height="72">Картинку этой иконки планирую добавить через CSS {background-image}-->
+    <!--<img src="img/advantages/food.svg" width="75" height="70">Картинку этой иконки планирую добавить через CSS {background-image}-->
+    <!--<img src="img/advantages/souvenirs.svg" width="64" height="77">Картинку этой иконки планирую добавить через CSS {background-image}-->
         <h3>
           Жильё
         </h3>
@@ -84,8 +86,8 @@
             Не только китайского, но и местного производства!
           </li>
         </ul>
-        <img src="img/Town.png" width="800" height="256" alt="Городок">
-        <img src="img/bridge.png" width="800" height="256" alt="Мост">
+        <img src="img/reasons/town.jpg" width="800" height="256" alt="Несколько одноэтажных деревянных домов с тиле архитектуры Дикого Запада">
+        <img src="img/reasons/bridge.jpg" width="800" height="256" alt="Две высокие и обрывистые скалы соединяет узкий нерукотворный каменный мост">
         <h3>
           Преимущества Седоны
         </h3>
@@ -153,20 +155,19 @@
           Заинтересовались?
         </p>
         <p>
-          Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <p>
-          <a href="catalog.html">
-            поиск гостиницы в Седоне
-          </a>
-        </p>
+          Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>        
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <input type="submit" value="поиск гостиницы в седоне"><!--Получится, что потом по нажатию этой кнопки будет всплывать папапп.-->
+        </form>       
       </section>
       <section>
         <h2>
           Седона на карте
         </h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52401.307494887835!2d-111.80562931389167!3d34.82903784281321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1621780668151!5m2!1sru!2sru"
-         width="1200" height="594" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
+        <a href="https://www.google.com/maps/place/%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0,+%D0%90%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D0%B0+86336,+%D0%A1%D0%A8%D0%90/@34.8543583,-111.8651786,12z/data=!3m1!4b1!4m5!3m4!1s0x872da132f942b00d:0x5548c523fa6c8efd!8m2!3d34.8697395!4d-111.7609896">
+          <img src="img/map.jpg" width="1200" height="594" alt="США, штат Аризона, город Седона">
+        </a>
       </section>
     </main>
     <footer>
@@ -192,17 +193,17 @@
         <ul>
           <li>
             <a href="https://twitter.com/">
-              <img src="img/twitter.svg" width="46" height="48" alt="Иконка Твиттер">
+              <img src="img/socials/twitter.svg" width="46" height="48" alt="Седона в Твиттер"><!--Фон для всех иконок планирую потом сделать через CSS-->
             </a>
           </li>
           <li>
             <a href="https://ru-ru.facebook.com/">
-              <img src="img/facebook.svg" width="46" height="48" alt="Иконка Фейсбук">
+              <img src="img/socials/fb-icon.svg" width="46" height="48" alt="Седона в Фейсбук">
             </a>
           </li>
           <li>
             <a href="https://youtube.com">
-              <img src="img/youtube.svg" width="46" height="48" alt="Иконка Ютуб">
+              <img src="img/socials/youtube.svg" width="46" height="48" alt="Седона в Ютуб">
             </a>
           </li>
         </ul>
@@ -212,7 +213,7 @@
           Website by
         </p>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/Academy-logo.svg" width="115" height="33" alt="Логотип академии">
+          <img src="img/logo-htmlacademy.png" width="115" height="33" alt="Сайт разработан в HTML академии">
         </a>
       </div>
     </footer>      
