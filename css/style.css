@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "PTSans";
+    src:local("PTSans"),
+        url("../fonts/PTSans.woff2") format("woff2"),
+        url("../fonts/PTSans.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PTSans-Bold";
+    src:local("PTSans-Bold"),
+        url("../fonts/PTSans-Bold.woff2") format("woff2"),
+        url("../fonts/PTSans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {    
+    --basic-black: #000000;
+    --basic-white: #FFFFFF;    
+    
+    --basic-dark: #766357;
+    --basic-dark-hover: #604E43;
+    --basic-dark-active: #503E33;
+
+    --basic-neutral: #F2F2F2;
+    --basic-neutral-hover: #EBEBEB;
+
+    --basic-pastel: #EEEEEE;
+        
+    --special: #81B3D2;  
+    --special-hover: #669EC0;
+    --special-extra-focus: #5496BD;  
+
+    --blocked: #6A6A6A;    
+}
+
+body {
+    font-family: "PTSans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+    background-color: var(--basic-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title-hidden {
+    visibility: hidden;
+}
+
+.main-nav {
+    font-weight: 700;
+    line-height: 26px;
+    background-color: transparent;
+}
+
+.site-nav {
+    list-style: none;
+}
+
+.site-nav a,
+.contacts a {
+    color: var(--basic-black);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--basic-dark);
+}
+
+
+.slogan {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    background-color: transparent;
+}
+
+.about-us-text {
+    line-height: 26px;
+    background-color: transparent;
+}
+
+.fetures-title {
+    font-weight: 700;
+    font-size: 21px;    
+}
+
+.features-emphasis {
+    background-color: var(--special);
+    color: var(--basic-white)
+}
+
+.features-remaining {
+    background-color: var(--basic-pastel)
+}
+
+
+
+.features-list {
+    list-style: none;
+}
+
+.specifically-title {
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 24px;
+}
+
+
+.button {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--basic-dark);
+    color: var(--basic-white);
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+}
+
+.button:hover {
+    background-color: var(--basic-dark-hover);
+}
+
+.button:active {
+    background-color: var(--basic-dark-active);/*Пока что не снаю, как сделать прозрачным
+     текст внутри кнопки при нажатии.*/       
+}
+
+.main-hoover {
+    background-color: var(--basic-white);
+    opacity: 0.9;
+}
+
+.contacts {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.contacts-list {
+    list-style: none;
+}
+
+.socials-list {
+    list-style: none;
+}
+
+.social-button {
+    width: 46px;
+    height: 48px;
+    background-color: var(--special);
+}
+
+.social-button:hover {
+    background-color: var(--special-hover);
+}
+
+.social-button:focus {
+    background-color: var(--special-extra-focus);
+}
+/*Логотип-ссылка Академии, я так понимаю, будет менять цвет при помощи смены png изображений (через javascript наверное?).*/
