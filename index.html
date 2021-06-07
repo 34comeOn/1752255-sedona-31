@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">    
     <title>
       HTML Academy: Седона
     </title>
@@ -10,13 +12,15 @@
     <link rel="apple-touch-icon" href="favicon/180.svg">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#">
+
+  <body class="page-body">
+
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="main-header-logo" href="#">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
         </a>
-        <ul>
+        <ul class="site-nav">
           <li>
             <a href="#">
               Информация
@@ -40,182 +44,196 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
-        <h1>
+
+    <main class="container">
+
+      <section class="about-us">        
+        <h1 class="title-hidden">
           Что посмотреть в Аризоне
         </h1>
-        <div>
-          <img src="img/background/index.jpg" width="1200" height="509" alt="Пейзаж долины величественного каньона">
-          <img src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать в великолепный город Седона! Гранд Каньон нам и в подметки не годится!">          
-      <!--<img src="img/decoration-stripes.svg" width="1200" height="509">Планирую сделать этот элемент при помощи SVG polygon points в html-->         
+        <div class="about-us content-about">
+          <img class="content-about image" src="img/background/index.jpg" width="1200" height="509" alt="Пейзаж долины величественного каньона">
+          <img class="content-about logo" src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать в великолепный город Седона! Гранд Каньон нам и в подметки не годится!">          
+      <!--<img class="content-about svg" src="img/decoration-stripes.svg" width="1200" height="509">Планирую сделать этот элемент при помощи SVG polygon points в html-->         
         </div>
         <div>
-          <p>
-            Седона — небольшой городок в Аризоне,заслуживающий большего!
+          <p class="slogan">
+            Седона — небольшой городок в Аризоне,<br>заслуживающий большего!
           </p>
-          <p>
+          <p class="about-us-text">
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
         </div>
       </section>
-      <section>
-        <h2>
-          Чем славится Седона
-        </h2>
-    <!--<img src="img/advantages/accommodation.svg" width="75" height="72">Картинку этой иконки планирую добавить через CSS {background-image}-->
-    <!--<img src="img/advantages/food.svg" width="75" height="70">Картинку этой иконки планирую добавить через CSS {background-image}-->
-    <!--<img src="img/advantages/souvenirs.svg" width="64" height="77">Картинку этой иконки планирую добавить через CSS {background-image}-->
-        <h3>
-          Жильё
-        </h3>
-        <h3>
-          Еда
-        </h3>
-        <h3>
-          Сувениры
-        </h3>
-        <ul>
-          <li>
-            Рекомендуем пожить в настоящем мотеле, всё как в кино!
-          </li>
-          <li>
-            Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-          </li>
-          <li>
-            Не только китайского, но и местного производства!
-          </li>
-        </ul>
-        <img src="img/reasons/town.jpg" width="800" height="256" alt="Несколько одноэтажных деревянных домов с тиле архитектуры Дикого Запада">
-        <img src="img/reasons/bridge.jpg" width="800" height="256" alt="Две высокие и обрывистые скалы соединяет узкий нерукотворный каменный мост">
-        <h3>
+
+      <section class="features">
+        <h2 class="title-hidden">
           Преимущества Седоны
-        </h3>
-        <div>
-          <p>
-            Настоящий городок
-          </p>
+        </h2>
+        <div class="features-emphasis">
+          <h3 class="features-title">
+            Настоящий<br>городок
+          </h3>
           <p>
             — №1 —
           </p>
           <p>
-            Седона — не аттракцион для туристов, там течёт своя жизнь
+            Седона — не аттракцион для туристов, там<br>течёт своя жизнь
           </p>
         </div>
-        <div>
-          <p>
-            Там есть<br> Мост дьявола
-          </p>
+        <img class="features-pic right" src="img/features/town.jpg" width="800" height="256" alt="Несколько одноэтажных деревянных домов с тиле архитектуры Дикого Запада">
+
+        <div class="advise">
+          <img src="img/advise/accommodation.svg" width="75" height="72" alt="">
+          <img src="img/advise/food.svg" width="75" height="70" alt="">
+          <img src="img/advise/souvenirs.svg" width="64" height="77" alt="">
+          <h3 class="features-title">
+            Жильё
+          </h3>
+          <h3 class="features-title">
+            Еда
+          </h3>
+          <h3 class="features-title">
+            Сувениры
+          </h3>
+          <ul class="features-list">
+            <li>
+              Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!
+            </li>
+            <li>
+              Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!
+            </li>
+            <li>
+              Не только китайского, но и местного<br>производства!
+            </li>
+          </ul>
+        </div> 
+        
+        <img class="features-pic left" src="img/features/bridge.jpg" width="800" height="256" alt="Две высокие и обрывистые скалы соединяет узкий нерукотворный каменный мост">                
+        <div class="features-emphasis">
+          <h3 class="features-title">
+            Там есть<br>Мост дьявола
+          </h3>
           <p>
             — №2 —
           </p>
           <p>
-            Да, по нему можно пройти! Если конечно вы осмелитесь
+            Да, по нему можно пройти! Если конечно<br> вы осмелитесь
           </p>
         </div>
-        <div>
-          <p>
-            небольшая площадь
-          </p>
+        <div class="features-remaining">
+          <h3 class="features-title">
+            небольшая<br>площадь
+          </h3>
           <p>
             — №3 —
           </p>
           <p>
-            все достопримечательности находятся очень близко
+            все достопримечательности<br> находятся очень близко
           </p>
         </div>
-        <div>
-          <p>
-            красивая дорога
-          </p>
+        <div class="features-remaining">
+          <h3 class="features-title">
+            красивая<br>дорога
+          </h3>
           <p>
             — №4 —
           </p>
           <p>
-            ехать в седону из лас-вегаса совсем не скучно!
+            ехать в седону из лас-вегаса совсем<br> не скучно!
           </p>
         </div>
-        <div>
-          <p>
-            мало туристов
-          </p>
+        <div class="features-remaining">
+          <h3 class="features-title">
+            мало<br>туристов
+          </h3>
           <p>
             — №5 —
           </p>
           <p>
-            большинство едет в гранд каньон и толпится там
+            большинство едет в гранд каньон<br> и толпится там
           </p>
         </div>        
       </section>
-      <section>
-        <h2>
+
+      <section class="specifically">
+        <h2 class="title-hidden">
           поиск гостиницы в Седоне
         </h2>
-        <p>
+        <h3 class="specifically-title">
           Заинтересовались?
-        </p>
-        <p>
-          Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
+        </h3>
+        <p class="specifically-text">
+          Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
         </p>        
         <form method="get" action="https://echo.htmlacademy.ru">
-          <input type="submit" value="поиск гостиницы в седоне"><!--Получится, что потом по нажатию этой кнопки будет всплывать папапп.-->
+          <button class="button" type="button" >
+            поиск гостиницы в седоне<!--Получится, что потом по нажатию этой кнопки будет всплывать папапп.-->
+          </button>
         </form>       
       </section>
-      <section>
-        <h2>
+
+      <section class="map">
+        <h2 class="title-hidden">
           Седона на карте
         </h2>
         <a href="https://www.google.com/maps/place/%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0,+%D0%90%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D0%B0+86336,+%D0%A1%D0%A8%D0%90/@34.8543583,-111.8651786,12z/data=!3m1!4b1!4m5!3m4!1s0x872da132f942b00d:0x5548c523fa6c8efd!8m2!3d34.8697395!4d-111.7609896">
           <img src="img/map.jpg" width="1200" height="594" alt="США, штат Аризона, город Седона">
         </a>
       </section>
+
     </main>
-    <footer>
-      <section>
-        <h2>
+
+    <footer class="main-footer">
+
+      <section class="contacts">
+        <h2 class="title-hidden">
           Как с нами связаться
         </h2>
-        <ul>
+        <ul class="contacts-list">
           <li>
             #visitSEDONA
           </li>
           <li>
-            <a href="tel:+78005558628">
+            <a class="contacts-phone" href="tel:+78005558628">
               +7 800 555-86-28
             </a>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>
+
+      <section class="socials">
+        <h2 class="title-hidden">
           Седона в социальных сетях
         </h2>
-        <ul>
+        <ul class="socials-list">
           <li>
-            <a href="https://twitter.com/">
-              <img src="img/socials/twitter.svg" width="46" height="48" alt="Седона в Твиттер"><!--Фон для всех иконок планирую потом сделать через CSS-->
+            <a class="social-button" href="https://twitter.com/">
+              <img class="socials-icons" src="img/socials/twitter.svg" width="17" height="17" alt="Седона в Твиттер"><!--Фон для всех иконок планирую потом сделать через CSS-->
             </a>
           </li>
           <li>
-            <a href="https://ru-ru.facebook.com/">
-              <img src="img/socials/fb-icon.svg" width="46" height="48" alt="Седона в Фейсбук">
+            <a class="social-button" href="https://ru-ru.facebook.com/">
+              <img class="socials-icons" src="img/socials/fb-icon.svg" width="12" height="22" alt="Седона в Фейсбук">
             </a>
           </li>
           <li>
-            <a href="https://youtube.com">
-              <img src="img/socials/youtube.svg" width="46" height="48" alt="Седона в Ютуб">
+            <a class="social-button" href="https://youtube.com">              
+              <img  class="socials-icons" src="img/socials/youtube.svg" width="20" height="16" alt="Седона в Ютуб">
             </a>
           </li>
         </ul>
       </section>
-      <div>
-        <p>
+
+      <div class="footer-copyright">
+        <p class="footer-copyright-text">
           Website by
         </p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.png" width="115" height="33" alt="Сайт разработан в HTML академии">
-        </a>
+        <a class="footer-copyright-pic" href="https://htmlacademy.ru/intensive/htmlcss">                        
+        </a><!--Думал я думал, так ничего и не придумал) не получается, чтобы все Path меняли свой цвет по наведению одновременно, не наследуют свойство от родителя SVG) -->
       </div>
-    </footer>      
+
+    </footer> 
+
   </body>
 </html>
