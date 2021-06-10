@@ -36,7 +36,8 @@
     --blocked: #6A6A6A;
     --ref: #BDBBBC;
     --basic-dir: #CACACA;
-    --basic-shadow: #ABABAB;      
+    --basic-shadow: #ABABAB;
+    --none: transparent;      
 }
 
 /* Global */
@@ -87,7 +88,7 @@ img {
 .main-nav {
     font-weight: 700;
     line-height: 26px;
-    background-color: transparent; 
+    background-color: var(--none); 
     
     display: grid;
     grid-template-columns: 400px 400px 400px;
@@ -144,7 +145,7 @@ img {
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
-    background-color: transparent;
+    background-color: var(--none);
     height: 80px; 
     margin: 0;
     padding: 0;      
@@ -152,7 +153,7 @@ img {
 
 .about-us-text {
     line-height: 26px;
-    background-color: transparent;  
+    background-color: var(--none);  
     margin: 0;
     padding: 0;     
 }
@@ -252,7 +253,7 @@ img {
 }
 
 .specifically-title {
-    background-color: transparent;
+    background-color: var(--none);
     font-weight: 700;
     font-size: 31px;
     line-height: 24px;
@@ -378,9 +379,9 @@ img {
 .menu-price,
 .menu-button {
     font-size: 14px;
-    text-align: 21px;
+    line-height: 21px;
     font-weight: 400;
-    background-color: transparent;
+    background-color: var(--none);
     color: var(--basic-white);
     border: 2px solid var(--basic-white);
 }
@@ -392,7 +393,7 @@ img {
 
 .arrange-button {
     border: none;
-    background-color: transparent;
+    background-color: var(--none);
     opacity: 0.3;
 }
 
