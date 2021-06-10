@@ -15,11 +15,8 @@
 
   <body class="page-body">
 
-    <header class="main-header">
-      <nav class="main-nav">
-        <a class="main-header-logo" href="#">
-          <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
-        </a>
+    <header class="main-header ">
+      <nav class="main-nav">        
         <ul class="site-nav">
           <li>
             <a href="#">
@@ -31,6 +28,11 @@
               Фото и видео
             </a>
           </li>
+        </ul>
+        <a class="main-header-logo" href="#">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
+        </a>
+        <ul class="site-nav"> 
           <li>
             <a href="#">
               Карта штата
@@ -51,109 +53,111 @@
         <h1 class="title-hidden">
           Что посмотреть в Аризоне
         </h1>
-        <div class="about-us content-about">
+        <div class="about-us content-about">          
           <img class="content-about image" src="img/background/index.jpg" width="1200" height="509" alt="Пейзаж долины величественного каньона">
-          <img class="content-about logo" src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать в великолепный город Седона! Гранд Каньон нам и в подметки не годится!">          
-      <!--<img class="content-about svg" src="img/decoration-stripes.svg" width="1200" height="509">Планирую сделать этот элемент при помощи SVG polygon points в html-->         
-        </div>
-        <div>
-          <p class="slogan">
-            Седона — небольшой городок в Аризоне,<br>заслуживающий большего!
-          </p>
-          <p class="about-us-text">
-            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-          </p>
+          <img class="content-about logo" src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать в великолепный город Седона! Гранд Каньон нам и в подметки не годится!">                   
+          <div class="wrapper">    
+            <p class="slogan">
+              Седона — небольшой городок в Аризоне,<br>заслуживающий большего!
+            </p>
+            <p class="about-us-text">
+              Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+            </p>
+          </div>   
         </div>
       </section>
 
-      <section class="features">
+      <section class="features grid-container">
         <h2 class="title-hidden">
           Преимущества Седоны
         </h2>
-        <div class="features-emphasis">
-          <h3 class="features-title">
-            Настоящий<br>городок
-          </h3>
-          <p>
-            — №1 —
-          </p>
-          <p>
-            Седона — не аттракцион для туристов, там<br>течёт своя жизнь
-          </p>
-        </div>
-        <img class="features-pic right" src="img/features/town.jpg" width="800" height="256" alt="Несколько одноэтажных деревянных домов с тиле архитектуры Дикого Запада">
-
-        <div class="advise">
-          <img src="img/advise/accommodation.svg" width="75" height="72" alt="">
-          <img src="img/advise/food.svg" width="75" height="70" alt="">
-          <img src="img/advise/souvenirs.svg" width="64" height="77" alt="">
-          <h3 class="features-title">
-            Жильё
-          </h3>
-          <h3 class="features-title">
-            Еда
-          </h3>
-          <h3 class="features-title">
-            Сувениры
-          </h3>
-          <ul class="features-list">
-            <li>
-              Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!
-            </li>
-            <li>
-              Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!
-            </li>
-            <li>
-              Не только китайского, но и местного<br>производства!
-            </li>
-          </ul>
-        </div> 
-        
-        <img class="features-pic left" src="img/features/bridge.jpg" width="800" height="256" alt="Две высокие и обрывистые скалы соединяет узкий нерукотворный каменный мост">                
-        <div class="features-emphasis">
-          <h3 class="features-title">
-            Там есть<br>Мост дьявола
-          </h3>
-          <p>
-            — №2 —
-          </p>
-          <p>
-            Да, по нему можно пройти! Если конечно<br> вы осмелитесь
-          </p>
-        </div>
-        <div class="features-remaining">
-          <h3 class="features-title">
-            небольшая<br>площадь
-          </h3>
-          <p>
-            — №3 —
-          </p>
-          <p>
-            все достопримечательности<br> находятся очень близко
-          </p>
-        </div>
-        <div class="features-remaining">
-          <h3 class="features-title">
-            красивая<br>дорога
-          </h3>
-          <p>
-            — №4 —
-          </p>
-          <p>
-            ехать в седону из лас-вегаса совсем<br> не скучно!
-          </p>
-        </div>
-        <div class="features-remaining">
-          <h3 class="features-title">
-            мало<br>туристов
-          </h3>
-          <p>
-            — №5 —
-          </p>
-          <p>
-            большинство едет в гранд каньон<br> и толпится там
-          </p>
-        </div>        
+        <div class="grid-features">
+          <div class="features-emphasis">
+            <h3 class="features-title">
+              Настоящий<br>городок
+            </h3>
+            <p>
+              — №1 —
+            </p>
+            <p>
+              Седона — не аттракцион для туристов, там<br>течёт своя жизнь
+            </p>
+          </div>
+          <img class="features-pic right" src="img/features/town.jpg" width="800" height="256" alt="Несколько одноэтажных деревянных домов с тиле архитектуры Дикого Запада">        
+          <div class="advise">
+            <div class="advise-wrapper">
+              <img class="advise-house" src="img/advise/accommodation.svg" width="75" height="72" alt="">
+              <img class="advise-food" src="img/advise/food.svg" width="75" height="70" alt="">
+              <img class="advise-present" src="img/advise/souvenirs.svg" width="64" height="77" alt="">
+              <h3 class="features-title title-house">
+                Жильё
+              </h3>
+              <h3 class="features-title title-food">
+                Еда
+              </h3>
+              <h3 class="features-title title-present">
+                Сувениры
+              </h3>
+            </div>  
+            <ul class="features-list">
+              <li>
+                Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!
+              </li>
+              <li>
+                Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!
+              </li>
+              <li>
+                Не только китайского, но и местного<br>производства!
+              </li>
+            </ul>
+          </div> 
+          
+          <img class="features-pic left" src="img/features/bridge.jpg" width="800" height="256" alt="Две высокие и обрывистые скалы соединяет узкий нерукотворный каменный мост">                
+          <div class="features-emphasis">
+            <h3 class="features-title">
+              Там есть<br>Мост дьявола
+            </h3>
+            <p>
+              — №2 —
+            </p>
+            <p>
+              Да, по нему можно пройти! Если конечно<br> вы осмелитесь
+            </p>
+          </div>
+          <div class="features-remaining left">
+            <h3 class="features-title">
+              небольшая<br>площадь
+            </h3>
+            <p>
+              — №3 —
+            </p>
+            <p>
+              все достопримечательности<br> находятся очень близко
+            </p>
+          </div>
+          <div class="features-remaining center">
+            <h3 class="features-title">
+              красивая<br>дорога
+            </h3>
+            <p>
+              — №4 —
+            </p>
+            <p>
+              ехать в седону из лас-вегаса совсем<br> не скучно!
+            </p>
+          </div>
+          <div class="features-remaining right">
+            <h3 class="features-title">
+              мало<br>туристов
+            </h3>
+            <p>
+              — №5 —
+            </p>
+            <p>
+              большинство едет в гранд каньон<br> и толпится там
+            </p>
+          </div>
+        </div>          
       </section>
 
       <section class="specifically">
@@ -168,7 +172,7 @@
         </p>        
         <form method="get" action="https://echo.htmlacademy.ru">
           <button class="button" type="button" >
-            поиск гостиницы в седоне<!--Получится, что потом по нажатию этой кнопки будет всплывать папапп.-->
+            поиск гостиницы в седоне
           </button>
         </form>       
       </section>
@@ -209,7 +213,7 @@
         <ul class="socials-list">
           <li>
             <a class="social-button" href="https://twitter.com/">
-              <img class="socials-icons" src="img/socials/twitter.svg" width="17" height="17" alt="Седона в Твиттер"><!--Фон для всех иконок планирую потом сделать через CSS-->
+              <img class="socials-icons" src="img/socials/twitter.svg" width="17" height="17" alt="Седона в Твиттер">
             </a>
           </li>
           <li>
@@ -230,7 +234,7 @@
           Website by
         </p>
         <a class="footer-copyright-pic" href="https://htmlacademy.ru/intensive/htmlcss">                        
-        </a><!--Думал я думал, так ничего и не придумал) не получается, чтобы все Path меняли свой цвет по наведению одновременно, не наследуют свойство от родителя SVG) -->
+        </a>
       </div>
 
     </footer> 
