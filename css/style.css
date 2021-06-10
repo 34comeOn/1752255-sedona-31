@@ -57,7 +57,7 @@ body {
     min-height: 100%;
     display: grid;
     grid-template-rows: 56px 1fr 120px;    
-    align-content: center;
+    align-content: start;
 }
 
 a {
@@ -120,7 +120,8 @@ img {
     grid-column: 1/-1; 
     
     display: grid;
-    grid-template-rows: 217px 86px auto;
+    grid-template-rows: 217px 86px 1fr;
+    min-height: 100%;    
 }
 
 .about-us.content-about {
@@ -336,7 +337,7 @@ img {
     outline-offset: -5px;   
     margin: 0 auto; 
     grid-row: 3/4;
-    grid-column: 1/-1;    
+    grid-column: 1/2;    
 
     display: grid;
     grid-template-columns: 400px 400px 400px;
