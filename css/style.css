@@ -112,6 +112,17 @@ img {
     grid-column: 1/-1;    
 }
 
+.catalog-container {
+    outline: 2px solid rgba(255, 115, 0, 0.7);
+    outline-offset: -5px;
+    margin: 0 auto; 
+    grid-row: 2/3;
+    grid-column: 1/-1; 
+    
+    display: grid;
+    grid-template-rows: 217px 86px auto;
+}
+
 .about-us.content-about {
     display: grid;
     grid-template-rows: 509px auto;
@@ -356,20 +367,61 @@ img {
  }
 
 .menu {
-    display: inline-block;
+    display: grid;    
+    grid-template-columns: 800px 400px;
     width: 1200px;
     height: 217px;
     background-color: var(--special);
     background-image: url("../img/background/catalog.jpg");
     background-position: top center;
     background-repeat: no-repeat;
-    color: var(--basic-white)
+    color: var(--basic-white);
 } 
+
+.menu-form {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-areas: 
+        "wish housing . price";
+}
+
+.content-wish {
+    grid-area: wish;
+}
+
+.content-housing {
+    grid-area: housing;
+}
+
+.content-price {
+    grid-area: price;
+}
+
+.menu-settings {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+}
 
 .menu-title {
     font-size: 16px;
     font-weight: 700;  
     }
+
+.arrange {
+    display: grid;
+    grid-template-columns: 220px 380px 600px;
+}
+
+.arrange-result {
+    margin-left: 60px;
+}
+
+.button-wrapper {
+    margin-left: auto;
+    margin-right: 60px;
+}
 
 .menu-content,
 .arrange-content {
@@ -451,6 +503,19 @@ img {
 
 .housing-title:active {
     opacity: 0.3;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: 208px 300px 692px;
+}
+
+.article-pic {
+    margin-left: auto;   
+}
+
+.rate-stars {
+    margin-left: auto;
 }
 
 .result-more {
