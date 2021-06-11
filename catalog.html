@@ -102,30 +102,24 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="menu-content content-price">
-            <legend class="menu-title">
-              Стоимость в сутки, ₽:
-            </legend>
-            <input class="menu-price" type="text" name="min_price_per_night" placeholder="от 0">
-            <input class="menu-price"  type="text" name="max_price_per_night" placeholder="до 3000">            
-            <button class="button menu-button" type="button">
-              Показать
-            </button>
-          </fieldset>
-        </form> 
+        </form>
         <div class="menu-settings">
-          <svg>
-            <circle class="menu-circle-from" r="9" cx="50%" cy="50%" fill="var(--basic-white)"/>
-          </svg>
-          <svg>
-            <circle class="menu-circle-till" r="9" cx="50%" cy="50%" fill="var(--basic-white)"/>
-          </svg>
-          <svg>
-            <rect width="316" height="2" x="60" y="10" fill="var(--basic-white)"/>
-          </svg>
-          <svg>
-            <rect width="248" height="2" x="70" y="40" fill="var(--basic-white)"/>
-          </svg>
+          <form class="menu-form" method="get" action="https://echo.htmlacademy.ru">  
+            <fieldset class="menu-content content-price">
+              <legend class="menu-title">
+                Стоимость в сутки, ₽:
+              </legend>
+              <input class="menu-price" type="text" name="min_price_per_night" placeholder="от 0">
+              <input class="menu-price"  type="text" name="max_price_per_night" placeholder="до 3000">            
+              <button class="button menu-button" type="button">
+                Показать
+              </button>
+            </fieldset>
+            <svg>
+              <circle class="menu-circle-from" r="9" cx="50%" cy="50%" fill="var(--basic-white)"/>
+            </svg>           
+          </form>         
+          
         </div>        
       </section>
 
