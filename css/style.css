@@ -74,13 +74,26 @@ img {
 }
 
 .title-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .main-header {   
     margin: 0 auto;  
     grid-column: 1/-1;   
     grid-row: 1/2;
+}
+
+.main-header-logo {
+    z-index: 1;
 }
 
 .main-nav {
@@ -127,6 +140,7 @@ img {
     width: 1200px;
     margin-bottom: 51px;
     row-gap: 42px; 
+    position: relative;
 }
 
 .content-about.image {
@@ -140,6 +154,11 @@ img {
     grid-column: 1/-1;
     justify-self: center;
     margin-top: 77px;         
+}
+
+.main-pic-decoration {
+    position: absolute;
+    top: 452px;
 }
 
 .slogan {
@@ -255,7 +274,7 @@ img {
 
 .specifically-title {
     margin-top: 57px;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
     background-color: var(--none);
     font-weight: 700;
     font-size: 31px;
@@ -263,7 +282,8 @@ img {
 }
 
 .specifically-text {
-    margin-bottom: 47px;
+    margin-bottom: 45px;
+    line-height: 24px;
 }
 
 .button {
@@ -284,6 +304,10 @@ img {
 
 .button:active {
     background-color: var(--basic-dark-active);
+}
+
+.main-search-button {
+    padding: 30px 138px;
 }
 
 .main-hoover {
@@ -329,6 +353,7 @@ img {
     display: flex;    
     align-items: center;   
     width: 454px;
+    flex-wrap: wrap;
 }
 
 .nav-item-left {     
@@ -343,6 +368,7 @@ img {
     display: flex;
     align-items: center;     
     width: 454px;
+    flex-wrap: wrap;
 }
 
 .nav-item-right {
@@ -387,17 +413,22 @@ img {
 
 .socials-item {    
     margin: auto 0;
-    margin-right: 35px;       
+    margin-right: 6px;          
+}
+
+.social-button {
+    display: flex;
+    width: 46px;
+    height: 48px;
+    background-color: var(--special);      
+}
+
+.socials-pic {
+    margin: auto;    
 }
 
 .socials-item:nth-child(3n) {
     margin-right: 0;
-}
-
-.social-button {
-    width: 46px;
-    height: 48px;
-    background-color: var(--special);
 }
 
 .social-button:hover {
@@ -406,6 +437,10 @@ img {
 
 .social-button:focus {
     background-color: var(--special-extra-focus);
+}
+
+.social-button:focus .socials-pic{
+    opacity: 0.5;
 }
 
 .footer-copyright {
@@ -729,8 +764,7 @@ img {
 
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
-    height: 90px;
+    justify-content: space-between;    
     margin-right: 70px;
 }
 
