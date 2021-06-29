@@ -171,10 +171,56 @@
         <p class="specifically-text">
           Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
         </p>        
-        <form method="get" action="https://echo.htmlacademy.ru">
+        <form class="search" method="get" action="https://echo.htmlacademy.ru">
           <button class="button main-search-button" type="button" >
             поиск гостиницы в седоне
           </button>
+          <fieldset class="modal">
+            <legend class="title-hidden">
+              когда вас ждать, и сколько гостей?
+            </legend>
+            <div class="search-container arrival-container">
+              <label class="search-label" for="arrival">
+                дата заезда:
+              </label>
+              <input class="search-date search-input" type="text" name="arrival-date" placeholder="24 апреля 2017" id="arrival">
+              <div class="calendar">                
+              </div>
+            </div>
+            <div class="search-container leave-container">  
+              <label class="search-label" for="leave">
+                дата выезда:
+              </label>
+              <input class="search-date search-input" type="text" name="leave-date" placeholder="4 июля 2017" id="leave">
+              <div class="calendar">                
+              </div>
+            </div>
+            <div class="search-container persons-container"> 
+              <label class="search-label" for="adults">
+                взрослые:                
+              </label>
+              <div class="input-container">
+                <input class="number-persons search-input" type="text" name="adults-guests" placeholder="2" id="adults">
+                <div class="persons-minus">                  
+                </div>
+                <div class="persons-plus">                  
+                </div>
+              </div>  
+              <label class="search-label label-children" for="children">
+                дети:               
+              </label>
+              <div class="input-container">
+                <input class="number-persons search-input" type="text" name="children-guests" placeholder="0" id="children">
+                <div class="persons-minus">                  
+                </div>
+                <div class="persons-plus">                  
+                </div>
+              </div>  
+            </div>   
+            <button class="button push-search" type="button" >
+              найти
+            </button>
+          </fieldset>
         </form>       
       </section>
 
