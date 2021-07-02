@@ -1017,6 +1017,19 @@ img {
     text-align: right;
 }
 
+.bar {
+    width: 80%;
+    margin-left: 0%;
+}
+
+.toggle-min {
+    left: 0%;
+}
+
+.toggle-max {
+    left: 80%;
+}
+
 /*Modal*/
 
 .search {
