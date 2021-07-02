@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.min.css">    
     <title>
       HTML Academy: Седона
     </title>
@@ -50,7 +50,7 @@
     <main class="container">
 
       <section class="about-us">        
-        <h1 class="title-hidden">
+        <h1 class="visually-hidden">
           Что посмотреть в Аризоне
         </h1>
         <div class="about-us content-about">          
@@ -69,7 +69,7 @@
       </section>
 
       <section class="features grid-container">
-        <h2 class="title-hidden">
+        <h2 class="visually-hidden">
           Преимущества Седоны
         </h2>
         <div class="grid-features">
@@ -162,7 +162,7 @@
       </section>
 
       <section class="specifically">
-        <h2 class="title-hidden">
+        <h2 class="visually-hidden">
           поиск гостиницы в Седоне
         </h2>
         <h3 class="specifically-title">
@@ -176,7 +176,7 @@
             поиск гостиницы в седоне
           </button>
           <fieldset class="modal">
-            <legend class="title-hidden">
+            <legend class="visually-hidden">
               когда вас ждать, и сколько гостей?
             </legend>
             <div class="search-container arrival-container">
@@ -225,7 +225,7 @@
       </section>
 
       <section class="map">
-        <h2 class="title-hidden">
+        <h2 class="visually-hidden">
           Седона на карте
         </h2>
         <a href="https://www.google.com/maps/place/%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0,+%D0%90%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D0%B0+86336,+%D0%A1%D0%A8%D0%90/@34.8543583,-111.8651786,12z/data=!3m1!4b1!4m5!3m4!1s0x872da132f942b00d:0x5548c523fa6c8efd!8m2!3d34.8697395!4d-111.7609896">
@@ -238,7 +238,7 @@
     <footer class="main-footer">
 
       <section class="contacts">
-        <h2 class="title-hidden">
+        <h2 class="visually-hidden">
           Как с нами связаться
         </h2>
         <ul class="contacts-list">
@@ -246,6 +246,9 @@
             #visitSEDONA
           </li>
           <li class="phone-flex">
+            <h3 class="visually-hidden">
+              Телефон для связи и подбора жилья
+            </h3>
             <a class="contacts-phone" href="tel:+78005558628">
               +7 800 555-86-28
             </a>
@@ -254,30 +257,30 @@
       </section>
 
       <section class="socials">
-        <h2 class="title-hidden">
+        <h2 class="visually-hidden">
           Седона в социальных сетях
         </h2>
         <ul class="socials-list">
           <li class="socials-item">
             <a class="social-button" href="https://twitter.com/">
-              <span class="title-hidden">Седона в Твиттер</span>
-              <svg class="socials-pic" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <span class="visually-hidden">Седона в Твиттер</span>
+              <svg aria-hidden="true" role="img" class="socials-pic" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.95 1.14403C12.635 0.648028 13.934 1.41403 14.527 2.32303C15.2 2.09203 15.858 1.84203 16.538 1.61503C16.5249 2.30139 16.2117 2.94755 15.681 3.38303C16.366 3.55303 16.985 2.89203 16.985 2.89203C16.816 3.89203 15.979 4.68003 15.422 4.91603C15.191 11.666 12.247 16.133 5.34498 15.998H4.89898C4.48898 15.998 0.734977 15.538 0.000976562 14.111C2.27198 14.307 3.89398 13.689 4.69398 12.934C3.73398 12.634 2.01498 12.457 1.71498 9.98403C2.06398 10.09 2.27898 10.212 2.90498 10.103C1.70498 9.24703 0.373977 8.53003 0.447977 6.33003C0.732977 6.65803 1.51498 6.86603 1.78798 6.80203C1.08498 6.56103 -0.182023 3.44203 0.893977 1.85003C2.71198 3.70403 4.62898 5.45603 8.04598 5.62303C8.25398 3.33003 9.18298 1.79303 10.95 1.14403Z" fill="white"/>
               </svg>              
             </a>
           </li>
           <li class="socials-item">
             <a class="social-button" href="https://ru-ru.facebook.com/">
-              <span class="title-hidden">Седона в Фейсбук</span>
-              <svg class="socials-pic" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <span class="visually-hidden">Седона в Фейсбук</span>
+              <svg aria-hidden="true" role="img" class="socials-pic" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
               </svg>              
             </a>
           </li>
           <li class="socials-item">
             <a class="social-button" href="https://youtube.com">
-              <span class="title-hidden">Седона в Ютуб</span>  
-              <svg class="socials-pic" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <span class="visually-hidden">Седона в Ютуб</span>  
+              <svg aria-hidden="true" role="img" class="socials-pic" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
               </svg>               
             </a>
@@ -289,6 +292,9 @@
         <p class="footer-copyright-text">
           Website by
         </p>
+        <h3 class="visually-hidden">
+          Переход на страницу создателей сайта города Седона
+        </h3>
         <a class="footer-copyright-pic" href="https://htmlacademy.ru/intensive/htmlcss">                        
         </a>
       </div>
