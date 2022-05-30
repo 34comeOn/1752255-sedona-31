@@ -1,4 +1,15 @@
-# Личный проект «Седона»
+First personal project "Sedona".
+ 
+Tools:
+- Figma
+- HTML
+- CSS
+- Git
+
+
+
+
+# Первый личный проект «Седона»
 
 * Студент: [Михаил Барабанов](https://up.htmlacademy.ru/htmlcss/31/user/1752255).
 * Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
